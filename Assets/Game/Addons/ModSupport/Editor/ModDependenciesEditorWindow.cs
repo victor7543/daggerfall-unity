@@ -203,7 +203,7 @@ namespace DaggerfallWorkshop.Game.Utility.ModSupport
             this.dependencies = editorDataGroup.ToList();
         }
 
-        private void SaveChanges()
+        public override void SaveChanges()
         {
             if (modInfo == null)
                 return;

@@ -87,7 +87,7 @@ namespace UnityEngine.Rendering.PostProcessing
 #if !UNITY_2017_3_OR_NEWER
                 && !RuntimeUtilities.isVREnabled
 #endif
-                && SystemInfo.graphicsDeviceType != GraphicsDeviceType.OpenGLES2;
+                ;
         }
 
         internal DepthTextureMode GetCameraFlags()

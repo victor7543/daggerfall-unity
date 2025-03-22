@@ -29,7 +29,7 @@ namespace DaggerfallWorkshop.Game.Addons.RmbBlockEditor.Elements
             add => removeItem += value;
             remove => removeItem -= value;
         }
-        public new class UxmlFactory : UxmlFactory<CatalogItemElement, UxmlTraits>
+        public new class UxmlFactory : UxmlElementAttribute
         {
         }
 

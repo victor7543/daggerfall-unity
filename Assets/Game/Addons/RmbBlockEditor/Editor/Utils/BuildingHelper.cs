@@ -115,8 +115,8 @@ namespace DaggerfallWorkshop.Game.Addons.RmbBlockEditor
         public static VisualElement GetPreview(BuildingReplacementData buildingData)
         {
             var tabs = new Tabs();
-            var tab1 = new Tab { value = 0, label = "Exterior" };
-            var tab2 = new Tab { value = 1, label = "Interior" };
+            var tab1 = new UnityEngine.UIElements.Tab { label = "Exterior" };
+            var tab2 = new UnityEngine.UIElements.Tab { label = "Interior" };
 
             var exteriorPreview = GetExteriorPreview(buildingData);
             var interiorPreview = GetInteriorPreview(buildingData);

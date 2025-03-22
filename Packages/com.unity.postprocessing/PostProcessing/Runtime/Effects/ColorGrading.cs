@@ -790,7 +790,7 @@ namespace UnityEngine.Rendering.PostProcessing
         {
 #if UNITY_2019_1_OR_NEWER
             var gFormat = GraphicsFormatUtility.GetGraphicsFormat(format, RenderTextureReadWrite.Linear);
-            return SystemInfo.IsFormatSupported(gFormat, FormatUsage.Linear);
+            return SystemInfo.IsFormatSupported(gFormat, GraphicsFormatUsage.Linear);
 #else
             // No good/fast way to test it on pre-2019.1
             return format.IsSupported();

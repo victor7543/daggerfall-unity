@@ -13,27 +13,14 @@ namespace DaggerfallWorkshop.Game.Addons.RmbBlockEditor.Elements
 {
     public class Tabs : VisualElement
     {
-        public new class UxmlFactory : UxmlFactory<Tabs, UxmlTraits>
+        public new class UxmlFactory : UxmlElementAttribute
         {
         }
 
-        public new class UxmlTraits : VisualElement.UxmlTraits
+        public new class UxmlTraits : UxmlElementAttribute
         {
             UxmlIntAttributeDescription selection =
                 new UxmlIntAttributeDescription { name = "selection", defaultValue = 0 };
-
-            public override IEnumerable<UxmlChildElementDescription> uxmlChildElementsDescription
-            {
-                get { yield break; }
-            }
-
-            public override void Init(VisualElement ve, IUxmlAttributes bag, CreationContext cc)
-            {
-                base.Init(ve, bag, cc);
-                var ate = ve as Tabs;
-
-                ate.selection = selection.GetValueFromBag(bag, cc);
-            }
         }
 
         public int selection { get; set; }

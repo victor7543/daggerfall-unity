@@ -40,7 +40,7 @@ namespace DaggerfallWorkshop.Game.Addons.RmbBlockEditor.Elements
             return data;
         }
 
-        public new class UxmlFactory : UxmlFactory<BuildingDataElement, UxmlTraits>
+        public new class UxmlFactory : UxmlElementAttribute
         {
         }
 
